@@ -25,18 +25,25 @@ export default function Home() {
 
       {/* Header */}
       <header className="sticky top-0 z-50 backdrop-blur-lg bg-dark-secondary/80 border-b border-gray-800">
-        <div className="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
-          <h1 className="text-xl sm:text-2xl font-bold gradient-text">Simple AuthX</h1>
-          <nav className="flex gap-3 sm:gap-6 text-sm sm:text-base">
-            <a href="#features" className="hover:text-secondary transition-colors">Features</a>
-            <a href="#install" className="hover:text-secondary transition-colors">Install</a>
-            <a href="#docs" className="hidden sm:inline hover:text-secondary transition-colors">Docs</a>
-            <a href="https://github.com/Antonymwangi20/simple-authx" target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition-colors flex items-center gap-1 sm:gap-2">
-              <Github size={18} /> <span className="hidden sm:inline">GitHub</span>
-            </a>
-          </nav>
-        </div>
-      </header>
+  <div className="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+    <div className="flex items-center gap-2 sm:gap-3">
+      <img 
+        src="/icon.png" 
+        alt="Simple AuthX Logo" 
+        className="w-7 h-7 sm:w-9 sm:h-9"
+      />
+      <h1 className="text-xl sm:text-2xl font-bold gradient-text">Simple AuthX</h1>
+    </div>
+    <nav className="flex gap-3 sm:gap-6 text-sm sm:text-base">
+      <a href="#features" className="hover:text-secondary transition-colors">Features</a>
+      <a href="#install" className="hover:text-secondary transition-colors">Install</a>
+      <a href="#docs" className="hidden sm:inline hover:text-secondary transition-colors">Docs</a>
+      <a href="https://github.com/Antonymwangi20/simple-authx" target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition-colors flex items-center gap-1 sm:gap-2">
+        <Github size={18} /> <span className="hidden sm:inline">GitHub</span>
+      </a>
+    </nav>
+  </div>
+</header>
 
       {/* Hero Section */}
       <section className="relative z-10 container mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20 text-center animate-fade-in">

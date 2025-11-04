@@ -9,10 +9,14 @@ export const metadata: Metadata = {
   description: "JWT authentication, bcrypt password hashing, and refresh token support with zero hassle. Plug it into your Express app and secure your routes in minutes.",
   keywords: ["authentication", "jwt", "nodejs", "express", "bcrypt", "security"],
   authors: [{ name: "Antony Mwangi" }],
+  icons: {
+    icon: '/icon.png',
+  },
   openGraph: {
     title: "Simple AuthX - Secure Authentication for Node.js",
     description: "Lightweight, secure, and easy-to-use authentication library",
     type: "website",
+    images: ['/icon.png'],
   },
 };
 
