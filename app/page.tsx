@@ -37,11 +37,11 @@ export default function Home() {
     <nav className="flex gap-3 sm:gap-6 text-sm sm:text-base">
       <a href="#features" className="hover:text-secondary transition-colors">Features</a>
       <a href="#install" className="hover:text-secondary transition-colors">Install</a>
-      <a href="#docs" className="hidden sm:inline hover:text-secondary transition-colors">Docs</a>
+      <a href="/docs" className="hover:text-secondary transition-colors hidden sm:inline">Docs</a>
       <a href="https://github.com/Antonymwangi20/simple-authx" target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition-colors flex items-center gap-1 sm:gap-2">
         <Github size={18} /> <span className="hidden sm:inline">GitHub</span>
       </a>
-    </nav>
+</nav>
   </div>
 </header>
 
@@ -80,14 +80,14 @@ export default function Home() {
           </div>
 
           <div className="flex flex-wrap justify-center gap-3 sm:gap-4 px-4">
-            <a href="#install" className="bg-secondary hover:bg-primary text-dark font-semibold px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg transition-all hover:scale-105 flex items-center gap-2 text-sm sm:text-base">
+            <a href="/docs" className="bg-secondary hover:bg-primary text-dark font-semibold px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg transition-all hover:scale-105 flex items-center gap-2 text-sm sm:text-base">
               Get Started <ChevronRight size={16} className="sm:w-[18px] sm:h-[18px]" />
             </a>
-            <a href="https://github.com/Antonymwangi20/simple-authx" target="_blank" rel="noopener noreferrer" 
-               className="bg-dark-secondary hover:bg-gray-800 text-white font-semibold px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg transition-all hover:scale-105 flex items-center gap-2 text-sm sm:text-base">
-              <Github size={16} className="sm:w-[18px] sm:h-[18px]" /> View on GitHub
-            </a>
-          </div>
+  <a href="https://github.com/Antonymwangi20/simple-authx" target="_blank" rel="noopener noreferrer" 
+     className="bg-dark-secondary hover:bg-gray-800 text-white font-semibold px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg transition-all hover:scale-105 flex items-center gap-2 text-sm sm:text-base">
+    <Github size={16} className="sm:w-[18px] sm:h-[18px]" /> View on GitHub
+  </a>
+</div>
         </div>
       </section>
 
@@ -182,8 +182,8 @@ app.listen(3000);`}</code>
             </div>
             <code className="text-sm sm:text-lg text-secondary block">npm install simple-authx</code>
           </div>
-          <a href="https://github.com/Antonymwangi20/simple-authx/blob/main/README.md" target="_blank" rel="noopener noreferrer"
-             className="inline-flex items-center gap-2 bg-primary hover:bg-secondary text-dark font-semibold px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg transition-all text-sm sm:text-base">
+          <a href="/docs" 
+            className="inline-flex items-center gap-2 bg-primary hover:bg-secondary text-dark font-semibold px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg transition-all text-sm sm:text-base">
             <BookOpen size={18} /> Read Full Documentation
           </a>
         </div>
@@ -320,7 +320,7 @@ const auth = await createAuth({
             <div>
               <h4 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Resources</h4>
               <ul className="space-y-1.5 sm:space-y-2 text-gray-400 text-xs sm:text-sm">
-                <li><a href="https://github.com/Antonymwangi20/simple-authx" target="_blank" className="hover:text-secondary transition-colors">Documentation</a></li>
+                <li><a href="/docs" className="hover:text-secondary transition-colors">Documentation</a></li>
                 <li><a href="https://github.com/Antonymwangi20/simple-authx/tree/main/examples" target="_blank" className="hover:text-secondary transition-colors">Examples</a></li>
                 <li><a href="https://github.com/Antonymwangi20/simple-authx/blob/main/MIGRATION.md" target="_blank" className="hover:text-secondary transition-colors">Migration Guide</a></li>
                 <li><a href="https://github.com/Antonymwangi20/simple-authx/blob/main/CHANGELOG.md" target="_blank" className="hover:text-secondary transition-colors">Changelog</a></li>
