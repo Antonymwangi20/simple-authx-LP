@@ -13,7 +13,7 @@ export default function DocsPage() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('introduction');
 
-  const copyToClipboard = (text, id) => {
+  const copyToClipboard = (text: string, id: string) => {
     navigator.clipboard.writeText(text);
     setCopied(id);
     setTimeout(() => setCopied(''), 2000);
@@ -32,7 +32,7 @@ export default function DocsPage() {
     { id: 'examples', title: 'Examples', icon: FileCode },
   ];
 
-  const CodeBlock = ({ code, language = 'typescript', id }) => (
+  const CodeBlock = ({ code, language = 'typescript', id }: { code: string; language?: string; id: string }) => (
     <div className="relative group">
       <div className="absolute right-2 top-2 opacity-0 group-hover:opacity-100 transition-opacity">
         <button
