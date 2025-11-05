@@ -2,6 +2,7 @@
   "name": "simple-authx-landing",
   "version": "1.0.0",
   "private": true,
+  "types": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
