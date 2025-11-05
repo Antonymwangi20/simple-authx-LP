@@ -312,6 +312,11 @@ const auth = await createAuth({
         <div className="container mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
             <div className="col-span-2 md:col-span-1">
+              <img 
+                    src="/icon.png" 
+                    alt="Simple AuthX Logo" 
+                    className="w-10 h-10 sm:w-16 sm:h-16"
+                />
               <h3 className="text-lg sm:text-xl font-bold gradient-text mb-3 sm:mb-4">Simple AuthX</h3>
               <p className="text-gray-400 text-xs sm:text-sm">
                 Secure, lightweight authentication for Node.js applications.
