@@ -1,5 +1,7 @@
 'use client';
 
+import LiveStats from '@/components/LiveStats';
+
 import { useState, useEffect } from 'react';
 import { 
   Shield, Lock, Zap, Package, Code, CheckCircle, Copy, 
@@ -61,22 +63,7 @@ export default function Home() {
           
           {/* Stats */}
           <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 mb-6 sm:mb-8 px-4">
-            <div className="bg-dark-secondary px-3 sm:px-4 py-2 rounded-lg flex items-center gap-2 hover:scale-105 transition-transform">
-              <Package size={14} className="text-secondary sm:w-4 sm:h-4" />
-              <span className="text-xs sm:text-sm">npm v2.0.0</span>
-            </div>
-            <div className="bg-dark-secondary px-3 sm:px-4 py-2 rounded-lg flex items-center gap-2 hover:scale-105 transition-transform">
-              <Star size={14} className="text-yellow-500 sm:w-4 sm:h-4" />
-              <span className="text-xs sm:text-sm">MIT License</span>
-            </div>
-            <div className="bg-dark-secondary px-3 sm:px-4 py-2 rounded-lg flex items-center gap-2 hover:scale-105 transition-transform">
-              <Download size={14} className="text-primary sm:w-4 sm:h-4" />
-              <span className="text-xs sm:text-sm">Zero Config</span>
-            </div>
-            <div className="bg-dark-secondary px-3 sm:px-4 py-2 rounded-lg flex items-center gap-2 hover:scale-105 transition-transform">
-              <Users size={14} className="text-secondary sm:w-4 sm:h-4" />
-              <span className="text-xs sm:text-sm">Production Ready</span>
-            </div>
+            <LiveStats />
           </div>
 
           <div className="flex flex-wrap justify-center gap-3 sm:gap-4 px-4">
